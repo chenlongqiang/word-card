@@ -21,7 +21,11 @@ class GenWorkCard {
     }
 }
 
-$words = '照婆甜梦老盒尺刀';
-$words = '时正文具笔画长放';
-$words = '用总尾巴玉尖竹苗';
-(new GenWorkCard())->run($words);
+$list = [
+    '照婆甜梦老盒尺刀',
+    '时正文具笔画长放',
+    '用总尾巴玉尖竹苗',
+];
+foreach ($list as $words) {
+    (new GenWorkCard())->run($words);
+}
